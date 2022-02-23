@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Operator {
+  Id: Int!
+  Name: Int!
+}
+
+type Query {
+  operators: [Operator!]!
+  operator(id: Int!): Operator!
+}
+
+type Mutation {
+  createOperator(createOperatorInput: CreateOperatorInput!): Operator!
+  updateOperator(updateOperatorInput: UpdateOperatorInput!): Operator!
+  removeOperator(id: Int!): Operator!
+}
+
+input CreateOperatorInput {
+  """Example field (placeholder)"""
+  Id: Int!
+  Name: Int!
+}
+
+input UpdateOperatorInput {
+  """Example field (placeholder)"""
+  Id: Int
+  Name: String!
+  id: Int!
+}
